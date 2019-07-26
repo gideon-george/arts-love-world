@@ -8,6 +8,9 @@ module.exports = {
   */
   head: {
     title: pkg.description,
+    script: [
+      {src: "http://flw-pms-dev.eu-west-1.elasticbeanstalk.com/flwv3-pug/getpaidx/api/flwpbf-inline.js"}
+    ],
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
