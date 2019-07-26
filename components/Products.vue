@@ -2,7 +2,7 @@
   <div>
     <div class="card-image">
       <figure class="image is-4by3">
-        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+        <img :src="product.img" alt="Placeholder image" />
       </figure>
     </div>
     <div class="card-content">
@@ -44,7 +44,7 @@
           <p>{{ product.reviews > 0 ? `${product.reviews} Reviews` : 'No reviews' }}</p>
         </div>
         <p class="is-pulled-right">
-          <span class="title is-4"><strong>&euro; {{ product.price }}</strong></span>
+          <span class="title is-4"><strong> &euro;{{ product.price }}</strong></span>
         </p>
       </div>
       <div class="card-footer btn-actions">
@@ -55,7 +55,7 @@
           </div>
            <div class="select is-rounded is-small">
             <select @change="onSelectQuantity(product.id)" v-model="selected">
-              <option v-for="quantity in quantityArray" :value="quantity">{{ quantity }}</option>
+              <option v-for="quantity in quantityArray" :key="quantity.id" :value="quantity">{{ quantity }}</option>
             </select>
           </div>
         </div>
