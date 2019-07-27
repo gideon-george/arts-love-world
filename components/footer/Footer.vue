@@ -38,7 +38,21 @@ New owerri, Imo State. Nigeria
           <p>
             <span class="icon">
               <i class="fa fa-phone"></i>
-            </span> +2349017318250
+            </span> +2349017318250<br/>
+            <span class="icon">
+              <i class="fa fa-phone"></i>
+            </span> +2348038789872<br/>
+            
+          </p>
+        </div>
+
+        <br />
+        <div>
+          
+            
+              <h3>Contact us today: </h3>
+              <p>
+            info@artsloveworld.store
           </p>
         </div>
       </div>

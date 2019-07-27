@@ -13,6 +13,7 @@ module.exports = {
     ],
     meta: [
       { charset: 'utf-8' },
+      { name: 'google-site-verification', content: '_oXL5thiSAu801EqOuMqfwR5qMZdQBsKirNK8uuRwYw'},
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description },
       { 'http-equiv': 'x-ua-compatible',  content: 'ie=edge' },
