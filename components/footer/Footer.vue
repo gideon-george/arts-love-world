@@ -6,8 +6,11 @@
         <p>
           <span class="icon">
             <i class="fa fa-map-marker"></i>
-          </span>30, Afolabi Aina Street,
-          <br />Ikeja, Lagos State, Nigeria.
+          </span>
+          No 10, Hon. Uche Anyanwu Crescent,
+          <br />Road 1 Imo Housing extension,
+          <br />
+New owerri, Imo State. Nigeria
         </p>
         <br />
         <a href="#">
@@ -71,6 +74,17 @@
             </h3>
           </nuxt-link>
         </p>
+<br />
+        <p>
+          <nuxt-link :to="{ name: 'donate' }">
+            <h3>
+              <span class="icon">
+               <i class="fa fa-heart"></i>
+              </span>Donation
+            </h3>
+          </nuxt-link>
+        </p>
+
         <br />
         <p>
           <nuxt-link :to="{ name: 'contact' }">
@@ -98,13 +112,13 @@
 
 <script>
 export default {
-  name: 'VmFooter',
-}
+  name: "VmFooter"
+};
 </script>
 
 <style lang="scss" scoped>
- .footer {
-   background: #b9e2fc;
-   color: black;
- }
+.footer {
+  background: #b9e2fc;
+  color: black;
+}
 </style>

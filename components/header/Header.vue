@@ -58,6 +58,16 @@
           </div>
 
           <div class="navbar-item">
+            <nuxt-link :to="{ name: 'donate' }" class="navbar-item">
+              <h1>
+                <span class="icon">
+                  <i class="fa fa-heart"></i>
+                </span> Donation
+              </h1>
+            </nuxt-link>
+          </div>
+
+          <div class="navbar-item">
             <nuxt-link :to="{ name: 'contact' }" class="navbar-item">
               <h1>
                 <span class="icon">
