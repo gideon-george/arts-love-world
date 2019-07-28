@@ -28,25 +28,20 @@
                 <div class="card-content__title">
                   <div class="column card-content__text">
                     <div class="container col-md-6">
-                      <h1 class="title">Pay Now</h1>
+                      <h6 class="title">Charges apply...</h6>
 
                       <p>
-                  <a href="https://rave.flutterwave.com/pay/artsloveworld">
-                    <img src="/img/paynow.jpg" alt="Pay now" />
-                  </a>
-                </p>
-
-                      
+                        <a href="https://rave.flutterwave.com/pay/artsloveworld">
+                          <img src="/img/paynow.jpg" alt="Pay now" />
+                        </a>
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <form>
-            <button type="button" style="cursor:pointer;" value="Pay Now" id="submit">Pay Now</button>
-          </form>
-        </div>
+          </div>
       </section>
       <footer class="modal-card-foot">
         <button
