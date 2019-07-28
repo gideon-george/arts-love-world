@@ -30,11 +30,13 @@
                     <div class="container col-md-6">
                       <h1 class="title">Pay Now</h1>
 
-                      <p>Work in progress, check back later today.</p>
+                      <p>
+                  <a href="https://rave.flutterwave.com/pay/artsloveworld">
+                    <img src="/img/paynow.jpg" alt="Pay now" />
+                  </a>
+                </p>
 
-                      <p>This part of the site is currently being updated...</p>
-
-                      <h3 class="title">Coming soon...</h3>
+                      
                     </div>
                   </div>
                 </div>
