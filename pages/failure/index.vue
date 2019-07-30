@@ -5,13 +5,13 @@
         <div class="card-content__title">
           <div class="column card-content__text">
             <div class="container col-md-6">
-              <h1 class="title">Mail Order</h1>
+              <h1 class="title">Failed</h1>
 
-              <p>Work in progress, check back later.</p>
-
-              <p>This part of the site is currently being updated...</p>
-
-              <h3 class="title">Coming soon...</h3>
+              <p>Your transaction has failed</p>
+              <p>
+                Please go back and try again,
+                <br />Thank you
+              </p>
             </div>
           </div>
         </div>

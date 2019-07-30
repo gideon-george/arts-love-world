@@ -28,13 +28,9 @@
                 <div class="card-content__title">
                   <div class="column card-content__text">
                     <div class="container col-md-6">
-                      <h6 class="title">Charges apply...</h6>
+                      <h6 class="title">Awaiting Gladepay verification...</h6>
 
-                      <p>
-                        <a href="https://rave.flutterwave.com/pay/artsloveworld">
-                          <img src="/img/paynow.jpg" alt="Pay now" />
-                        </a>
-                      </p>
+                      
                     </div>
                   </div>
                 </div>

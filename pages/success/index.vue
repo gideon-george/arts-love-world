@@ -5,13 +5,13 @@
         <div class="card-content__title">
           <div class="column card-content__text">
             <div class="container col-md-6">
-              <h1 class="title">Mail Order</h1>
+              <h1 class="title">Success!</h1>
 
-              <p>Work in progress, check back later.</p>
-
-              <p>This part of the site is currently being updated...</p>
-
-              <h3 class="title">Coming soon...</h3>
+              <p>Your transaction is being processed...</p>
+              <p>
+                Please if you didn't receive your product in 21 days from today,
+                <br />Endeavour to send us an email at support@artsloveworld.store
+              </p>
             </div>
           </div>
         </div>
