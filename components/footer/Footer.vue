@@ -7,10 +7,12 @@
           <span class="icon">
             <i class="fa fa-map-marker"></i>
           </span>
+        </p>
+        <p>UDOCALIZG GLOBAL ENTERPRISE</p>
+        <p>
           No 10, Hon. Uche Anyanwu Crescent,
           <br />Road 1 Imo Housing extension,
-          <br />
-New owerri, Imo State. Nigeria
+          <br />Owerri, Imo State. Nigeria
         </p>
         <br />
         <a href="#">
@@ -38,21 +40,23 @@ New owerri, Imo State. Nigeria
           <p>
             <span class="icon">
               <i class="fa fa-phone"></i>
-            </span> +2349017318250<br/>
+            </span> +2349017318250
+            <br />
             <span class="icon">
               <i class="fa fa-phone"></i>
-            </span> +2348038789872<br/>
-            
+            </span> +2348038789872
+            <br />
           </p>
         </div>
 
         <br />
         <div>
-          
-            
-              <h3>Contact us today: </h3>
-              <p>
-            info@artsloveworld.store
+          <h3 class="title">Satisfaction Guaranteed</h3>
+          <p class="font-weight-light">
+            We are incredibly proud of our craftsmanship and stand by our product 100%,
+            no matter what, no questions asked, no holds barred, no ifs, no ands, no buts.
+            If you have a problem, we will solve it. Refund it. Send you new Paintings.
+            Whatever it takes. Just reach out to our support team.
           </p>
         </div>
       </div>
@@ -88,18 +92,8 @@ New owerri, Imo State. Nigeria
             </h3>
           </nuxt-link>
         </p>
-<br />
-        <p>
-          <nuxt-link :to="{ name: 'donate' }">
-            <h3>
-              <span class="icon">
-               <i class="fa fa-heart"></i>
-              </span>Donation
-            </h3>
-          </nuxt-link>
-        </p>
-
         <br />
+
         <p>
           <nuxt-link :to="{ name: 'contact' }">
             <h3>

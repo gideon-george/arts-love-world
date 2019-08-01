@@ -9,7 +9,7 @@ module.exports = {
   head: {
     title: pkg.description,
     script: [
-      {src: "http://flw-pms-dev.eu-west-1.elasticbeanstalk.com/flwv3-pug/getpaidx/api/flwpbf-inline.js"}
+      {src: "//voguepay.com/js/voguepay.js"}
     ],
     meta: [
       { charset: 'utf-8' },
