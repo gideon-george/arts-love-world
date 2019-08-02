@@ -11,7 +11,7 @@
         </p>
         <br />
         <a href="#">
-          <p>With ❤ From Arts Love World | &trade;</p>
+          <p>Mail Art ❤ From Arts Love World | &trade;</p>
         </a>
         <br />
         <a href="#">
@@ -21,7 +21,7 @@
 
       <div class="column has-text-center">
         <div>
-          <h6 class="title">24/7 Support</h6>
+          <h6 class="title">Mail Art 24/7 Support</h6>
           <nuxt-link :to="{ name: 'contact' }">
             <h3 class="subtitle">
               <span class="icon">
@@ -61,16 +61,7 @@
             </h3>
           </nuxt-link>
         </p>
-        <br />
-        <p>
-          <nuxt-link :to="{ name: 'mailorder' }">
-            <h3>
-              <span class="icon">
-                <i class="fa fa-envelope"></i>
-              </span>Mail Order
-            </h3>
-          </nuxt-link>
-        </p>
+        
         <br />
         <p>
           <nuxt-link :to="{ name: 'contact' }">

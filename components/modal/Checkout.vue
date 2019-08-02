@@ -15,7 +15,7 @@
             >{{ removeLabel }}</button>
 
             <p>{{ product.title }} {{ product.quantity > 0 ? ` - Quantity: ${product.quantity}` : ''}}</p>
-            <p>&euro;{{ product.price }}</p>
+            <p>&#36;{{ product.price }}</p>
           </div>
           <div v-if="products.length === 0">
             <p>{{ cartEmptyLabel }}</p>
@@ -23,7 +23,12 @@
           </div>
         </div>
         <div v-if="isCheckoutSection">
-          <p>You bought it :-)</p>
+<p>Buy now and fill the form at the MailArt payment page, next...</p>
+        <figure>
+		<a href= "https://pay.gladepay.com/artslovemail">
+        <img src="/img/buynow.png" alt="Buy now" />
+		</a>
+      </figure>
 				</div>
       </section>
       <footer class="modal-card-foot">
@@ -91,7 +96,7 @@ export default {
 				} else {
 					productLabel = 'product';
 				}
-				return `Buy ${totalProducts} ${productLabel} at €${finalPrice}`;
+				return `Buy ${totalProducts} ${productLabel} at $${finalPrice}`;
 		},
 		isUserLoggedIn () {
 			return this.$store.getters.isUserLoggedIn;

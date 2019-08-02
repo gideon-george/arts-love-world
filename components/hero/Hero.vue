@@ -2,7 +2,8 @@
   <div class="hero is-medium is-bold">
     <div class="hero-body">
       <div class="container">
-        <h1 class="title">ARTS LOVE WORLD</h1>
+        <h1 class="title">MAIL ART</h1>
+        <h2 class="subtitle">ARTS LOVE WORLD MAIL ORDER</h2>
         <h2 class="subtitle">Oil On Canvas Paintings, framed on Wood.</h2>
         <p></p>
         <p></p>
