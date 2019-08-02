@@ -8,6 +8,7 @@
     "build": "babel src -d lib",
     "test": "jest",
     "production": "nuxt build",
+    "generate": "nuxt generate",
     "now-build": "nuxt generate"
   },
   "repository": {
