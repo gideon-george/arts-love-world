@@ -9,7 +9,10 @@ module.exports = {
   head: {
     title: pkg.description,
     script: [
-      {src: "//voguepay.com/js/voguepay.js"}
+      {src: '//voguepay.com/js/voguepay.js'},
+      {src: 'https://api.gladepay.com/checkout.js'}
+      
+      
     ],
     meta: [
       { charset: 'utf-8' },

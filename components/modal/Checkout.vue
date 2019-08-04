@@ -31,43 +31,22 @@
                       <h6 class="title">Free Shipping</h6>
                       <p>For your oil on canvas paintings, framed on 27.6 x 19.7 size wood.</p>
                       <p></p>
+                      
+                      <form method="POST" action="https://voguepay.com/pay/">
+<input type="hidden" name="v_merchant_id" value="5453-0089880" />
+<input type="hidden" name="memo" value="Arts Love World Oil on canvas paintings framed on wood" />
+<input type="hidden" name="notify_url" value="www.artsloveworld.store/success" />
+<input type="hidden" name="success_url" value="www.artsloveworld.store/success" />
+<input type="hidden" name="fail_url" value="www.artsloveworld.store/failure" />
+<input type="hidden" name="developer_code" value="5d2c0eb22f149" />
+<input type="hidden" name="cur" value="EUR" />
+<input type="hidden" name="item_1" :value="finalPrice" />
+<input type="hidden" name="price_1" :value="finalPrice" />
+<input type="hidden" name="description_1" value="" />
+<input type="image" src="https://voguepay.com/images/buttons/Buynow.png" class="buynowimg" style="width: 100%;" />
+</form>
 
-                      <form
-                        id="payform"
-                        onsubmit="return false;"
-                        method="POST"
-                        action="https://voguepay.com/pay/"
-                      >
-                        <input type="hidden" name="v_merchant_id" value="qa331322179752" />
-                        <input type="hidden" name="merchant_ref" value="234-567-890" />
-                        <input
-                          type="hidden"
-                          name="memo"
-                          value="Order for oil on canvas painting, framed on wood"
-                        />
 
-                        <input type="hidden" name="item_1" value="Face Cap" />
-                        <input type="hidden" name="description_1" value="Blue Zizi facecap" />
-                        <input type="hidden" :name="productLabel" :value="finalPrice" />
-
-                        <input type="hidden" name="developer_code" value="5d2c0eb22f149" />
-                        <input type="hidden" name="store_id" value="25" />
-
-                        <input type="hidden" name="total" :value="finalPrice" />
-
-                        <input type="hidden" name="cname" :value="cname" />
-                        <input type="hidden" name="address" :value="address" />
-                        <input type="hidden" name="city" :value="city" />
-                        <input type="hidden" name="state" :value="state" />
-                        <input type="hidden" name="zipcode" :value="zipcode" />
-                        <input type="hidden" name="email" :value="email" />
-                        <input type="hidden" name="phone" :value="phone " />
-                        <input
-                          type="image"
-                          src="http://voguepay.com/images/buttons/buynow_blue.png"
-                          alt="Submit"
-                        />
-                      </form>
                     </div>
                   </div>
                 </div>
@@ -94,6 +73,11 @@
 
 <script>
 export default {
+  head() {
+    return {
+      script: [{ src: "//voguepay.com/js/voguepay.js" }]
+    };
+  },
   name: "checkout",
 
   data() {
@@ -102,17 +86,12 @@ export default {
       removeLabel: "Remove from cart",
       cartEmptyLabel: "Your cart is empty",
       closeLabel: "Close",
-      isCheckoutSection: false,
-      address: "",
-      city: "",
-      state: "",
-      zipcode: "",
-      email: "",
-      phone: ""
+      isCheckoutSection: false
     };
   },
 
   computed: {
+  
     products() {
       return this.$store.getters.productsAdded;
     },
@@ -173,7 +152,6 @@ export default {
     onNextBtn() {
       if (this.isUserLoggedIn) {
         this.isCheckoutSection = true;
-        Voguepay.init({ form: "payform" }, { cur: "EUR" });
       } else {
         this.$store.commit("showCheckoutModal", false);
         this.$store.commit("showLoginModal", true);
@@ -181,6 +159,17 @@ export default {
     },
     onPrevBtn() {
       this.isCheckoutSection = false;
+    },
+    closedFunction() {
+      alert("window closed");
+    },
+
+    successFunction(transaction_id) {
+      alert("Transaction was successful, Ref: " + transaction_id);
+    },
+
+    failedFunction(transaction_id) {
+      alert("Transaction was not successful, Ref: " + transaction_id);
     }
   }
 };
