@@ -28,9 +28,86 @@
                 <div class="card-content__title">
                   <div class="column card-content__text">
                     <div class="container col-md-6">
-                      <h6 class="title">Free Shipping</h6>
-                      <p>For your oil on canvas paintings, framed on 27.6 x 19.7 size wood.</p>
+                      
                       <p></p>
+                      
+
+                         <form
+                  name="kyc"
+                  action=" "
+                  netlify-honeypot="bot-field"
+                  method="post"
+                  @change="formOnChange"
+                  netlify
+                >
+                  <div class="form-group">
+                    <label class="form-label" for="fullname">Full Name:</label>
+                    <input class="form-field form-control " name="fullname" id="fullname" />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="email">Email:</label>
+                    <input
+                      class="form-field form-control form-control"
+                      name="email"
+                      id="email"
+                    />
+                  </div>
+                   <div class="form-group">
+                    <label class="form-label" for="phone">Phone:</label>
+                    <input
+                      class="form-field form-control form-control"
+                      name="phone"
+                      id="phone"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="city">City:</label>
+                    <input
+                      class="form-field form-control form-control"
+                      name="city"
+                      id="city"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="state">State:</label>
+                    <input
+                      class="form-field form-control form-control"
+                      name="state"
+                      id="state"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="country">Country:</label>
+                    <input
+                      class="form-field form-control form-control"
+                      name="country"
+                      id="country"
+                    />
+                  </div>
+
+
+                  <div class="form-group">
+                    <label class="form-label" for="shipping">Shipping Address:</label>
+                    <textarea
+                      class="form-field form-control"
+                      rows="4"
+                      name="shipping"
+                      id="shipping"
+                    >
+                    </textarea>
+                  </div>
+                 <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input"  id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">
+      I accept the <a href="https://www.artsloveworld.store/terms">Terms / Conditions</a> 
+      And <a href="https://www.artsloveworld.store/policy">Sales Policy</a>
+    </label>
+  </div>
+    </form>
+
                       
                       <form method="POST" action="https://voguepay.com/pay/">
 <input type="hidden" name="v_merchant_id" value="5453-0089880" />
