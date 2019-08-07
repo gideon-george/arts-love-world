@@ -24,7 +24,12 @@
     "babel-polyfill": "^6.26.0",
     "babel-runtime": "^6.26.0",
     "bulma": "^0.7.5",
+<<<<<<< HEAD
     "nuxt": "^2.8.1",
+=======
+    "nuxt": "latest",
+    "nvm": "^0.0.4",
+>>>>>>> b7ebd4dc5dff7f741ce464cf1dc2df45cb3c89a5
     "vue": "^2.6.10",
     "vue-router": "^3.0.6",
     "vuex": "^3.1.1"

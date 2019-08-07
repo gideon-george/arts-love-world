@@ -15,7 +15,11 @@
             >{{ removeLabel }}</button>
 
             <p>{{ product.title }} {{ product.quantity > 0 ? ` - Quantity: ${product.quantity}` : ''}}</p>
+<<<<<<< HEAD
             <p>${{ product.price }}</p>
+=======
+            <p>&#36;{{ product.price }}</p>
+>>>>>>> b7ebd4dc5dff7f741ce464cf1dc2df45cb3c89a5
           </div>
           <div v-if="products.length === 0">
             <p>{{ cartEmptyLabel }}</p>
@@ -23,6 +27,7 @@
           </div>
         </div>
         <div v-if="isCheckoutSection">
+<<<<<<< HEAD
 <form
                   name="kyc"
                   action=" "
@@ -98,6 +103,14 @@
     </label>
   </div>
     </form>
+=======
+<p>Buy now and fill the form at the MailArt payment page, next...</p>
+        <figure>
+		<a href= "https://pay.gladepay.com/artslovemail">
+        <img src="/img/buynow.png" alt="Buy now" />
+		</a>
+      </figure>
+>>>>>>> b7ebd4dc5dff7f741ce464cf1dc2df45cb3c89a5
 				</div>
       </section>
       <footer class="modal-card-foot">
