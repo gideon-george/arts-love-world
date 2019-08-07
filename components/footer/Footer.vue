@@ -6,12 +6,17 @@
         <p>
           <span class="icon">
             <i class="fa fa-map-marker"></i>
-          </span>30, Afolabi Aina Street,
-          <br />Ikeja, Lagos State, Nigeria.
+          </span>
+        </p>
+        <p>UDOCALIZG GLOBAL ENTERPRISE</p>
+        <p>
+          No 10, Hon. Uche Anyanwu Crescent,
+          <br />Road 1 Imo Housing extension,
+          <br />Owerri, Imo State. Nigeria
         </p>
         <br />
         <a href="#">
-          <p>With ❤ From Arts Love World | &trade;</p>
+          <p>MailArts ❤ From Arts Love World | &trade;</p>
         </a>
         <br />
         <a href="#">
@@ -21,7 +26,7 @@
 
       <div class="column has-text-center">
         <div>
-          <h6 class="title">24/7 Support</h6>
+          <h6 class="title">MailArts 24/7 Support</h6>
           <nuxt-link :to="{ name: 'contact' }">
             <h3 class="subtitle">
               <span class="icon">
@@ -36,6 +41,22 @@
             <span class="icon">
               <i class="fa fa-phone"></i>
             </span> +2349017318250
+            <br />
+            <span class="icon">
+              <i class="fa fa-phone"></i>
+            </span> +2348038789872
+            <br />
+          </p>
+        </div>
+
+        <br />
+        <div>
+          <h3 class="title">Satisfaction Guaranteed</h3>
+          <p class="font-weight-light">
+            We are incredibly proud of our craftsmanship and stand by our product 100%,
+            no matter what, no questions asked, no holds barred, no ifs, no ands, no buts.
+            If you have a problem, we will solve it. Refund it. Send you new Paintings.
+            Whatever it takes. Just reach out to our support team.
           </p>
         </div>
       </div>
@@ -62,16 +83,7 @@
           </nuxt-link>
         </p>
         <br />
-        <p>
-          <nuxt-link :to="{ name: 'mailorder' }">
-            <h3>
-              <span class="icon">
-                <i class="fa fa-envelope"></i>
-              </span>Mail Order
-            </h3>
-          </nuxt-link>
-        </p>
-        <br />
+
         <p>
           <nuxt-link :to="{ name: 'contact' }">
             <h3>
@@ -98,13 +110,13 @@
 
 <script>
 export default {
-  name: 'VmFooter',
-}
+  name: "VmFooter"
+};
 </script>
 
 <style lang="scss" scoped>
- .footer {
-   background: #b9e2fc;
-   color: black;
- }
+.footer {
+  background: #b9e2fc;
+  color: black;
+}
 </style>

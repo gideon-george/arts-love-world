@@ -5,7 +5,7 @@ export const state = () => ({
       title: "Arts Gallery Tour Brochure",
       description:
         "Arts love world all encompass brochure",
-      price: 2,
+      price: 1,
       ratings: 3,
       reviews: 17,
       isAddedToCart: false,
