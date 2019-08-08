@@ -8,8 +8,15 @@ module.exports = {
   */
   head: {
     title: pkg.description,
+    script: [
+      {src: '//voguepay.com/js/voguepay.js'},
+      {src: 'https://api.gladepay.com/checkout.js'}
+      
+      
+    ],
     meta: [
       { charset: 'utf-8' },
+      { name: 'google-site-verification', content: '_oXL5thiSAu801EqOuMqfwR5qMZdQBsKirNK8uuRwYw'},
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description },
       { 'http-equiv': 'x-ua-compatible',  content: 'ie=edge' },
@@ -17,23 +24,7 @@ module.exports = {
       { name: 'msapplication-TileImage',  content: '/ms-icon-144x144.png' },
       { name: 'theme-color',  content: '#ffffff' },
       
-      // Facebook open graph
-      { property: 'og:type',  content: 'website' },
-      { property: 'og:url',  content: 'https://example.com/page.html' },
-      { property: 'og:title',  content: 'Content Title' },
-      { property: 'og:image',  content: 'https://example.com/image.jpg' },
-      { property: 'og:description',  content: 'Description Here' },
-      { property: 'og:site_name',  content: 'Site Name' },
-      { property: 'og:locale',  content: 'en_US' },
-
-      // Twitter card
-      { property: 'twitter:card',  content: 'summary' },
-      { property: 'twitter:site',  content: '@site_account' },
-      { property: 'twitter:creator',  content: '@individual_account' },
-      { property: 'twitter:url',  content: 'https://example.com/page.html' },
-      { property: 'twitter:title',  content: 'Content Title' },
-      { property: 'twitter:description',  content: 'Content description less than 200 characters' },
-      { property: 'twitter:image',  content: 'https://example.com/image.jpg' }
+ 
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -53,10 +44,12 @@ module.exports = {
         rel: 'stylesheet',
         href:
           'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons'
-      }
+      },
+      {rel: 'stylesheet', type: 'text/css', href: 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'},
+      {rel: 'stylesheet', type: 'text/css', href: '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'}
     ]
   },
-
+  
   /*
   ** Customize the progress-bar color
   */
@@ -65,6 +58,10 @@ module.exports = {
   /*
   ** Global CSS
   */
+ generate:{
+    
+},
+
   css: [
     {
       src: 'bulma/bulma.sass',

@@ -45,8 +45,13 @@ export const state = () => ({
     {
       id: 4,
       title: "Angela",
+<<<<<<< HEAD
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       price: 753,
+=======
+      description:
+        "Classic oil on canvas painting art, with decent appreciating value.",      price: 753,
+>>>>>>> e24c0913ed5498d0513f3f28fbd8dae67792809d
       ratings: 1,
       reviews: 0,
       isAddedToCart: false,
