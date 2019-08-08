@@ -1,11 +1,7 @@
 {
   "name": "vuemmerce",
   "version": "0.9.2",
-<<<<<<< HEAD
   "description": "Mail Arts",
-=======
-  "description": "Arts Love World Classic Arts",
->>>>>>> e24c0913ed5498d0513f3f28fbd8dae67792809d
   "author": "Gideon George <georgegideon@gmail.com>",
   "scripts": {
     "dev": "nuxt",

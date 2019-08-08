@@ -45,13 +45,8 @@ export const state = () => ({
     {
       id: 4,
       title: "Angela",
-<<<<<<< HEAD
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       price: 753,
-=======
-      description:
-        "Classic oil on canvas painting art, with decent appreciating value.",      price: 753,
->>>>>>> e24c0913ed5498d0513f3f28fbd8dae67792809d
       ratings: 1,
       reviews: 0,
       isAddedToCart: false,
@@ -63,8 +58,7 @@ export const state = () => ({
     {
       id: 5,
       title: "Backstage",
-      description:
-        "Classic oil on canvas painting art, with decent appreciating value.",
+      description: "Classic oil on canvas painting art, with decent appreciating value.",
       price: 789,
       ratings: 4,
       reviews: 2,
@@ -134,8 +128,7 @@ export const state = () => ({
     {
       id: 10,
       title: "Focus",
-      description:
-        "Classic oil on canvas painting art, with decent appreciating value.",
+      description: "Classic oil on canvas painting art, with decent appreciating value.",
       price: 880,
       ratings: 3,
       reviews: 5,
@@ -188,25 +181,11 @@ export const state = () => ({
       quantity: 1,
       img: "/img/13.jpg"
     },
-    {
-      id: 14,
-      title: "Happiness is A Warm Gun",
-      description:
-        "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 910,
-      ratings: 1,
-      reviews: 0,
-      isAddedToCart: false,
-      isAddedBtn: false,
-      isFavourite: false,
-      quantity: 1,
-      img: "/img/14.jpg"
-    },
+    
     {
       id: 15,
       title: "King Of The Hill",
-      description:
-        "Classic oil on canvas painting art, with decent appreciating value.",
+      description: "Classic oil on canvas painting art, with decent appreciating value.",
       price: 857,
       ratings: 4,
       reviews: 2,
