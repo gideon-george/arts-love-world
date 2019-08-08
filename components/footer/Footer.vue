@@ -91,19 +91,6 @@
           </nuxt-link>
         </p>
         <br />
-<<<<<<< HEAD
-=======
-        <p>
-          <nuxt-link :to="{ name: 'mailorder' }">
-            <h3>
-              <span class="icon">
-                <i class="fa fa-envelope"></i>
-              </span>Mail Order
-            </h3>
-          </nuxt-link>
-        </p>
-        <br />
->>>>>>> e24c0913ed5498d0513f3f28fbd8dae67792809d
 
         <p>
           <nuxt-link :to="{ name: 'contact' }">

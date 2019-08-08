@@ -48,19 +48,6 @@
           </div>
 
           <div class="navbar-item">
-<<<<<<< HEAD
-=======
-            <nuxt-link :to="{ name: 'mailorder' }" class="navbar-item">
-              <h1>
-                <span class="icon">
-                  <i class="fa fa-envelope"></i>
-                </span> Mail order
-              </h1>
-            </nuxt-link>
-          </div>
-
-          <div class="navbar-item">
->>>>>>> e24c0913ed5498d0513f3f28fbd8dae67792809d
             <nuxt-link :to="{ name: 'contact' }" class="navbar-item">
               <h1>
                 <span class="icon">
