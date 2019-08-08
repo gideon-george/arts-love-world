@@ -1,27 +1,22 @@
 {
   "name": "vuemmerce",
   "version": "0.9.2",
-  "description": "Responsive ecommerce template built with Vue.js and Nuxt.js",
-  "author": "ivan lori <ivan.lori@protonmail.com>",
+  "description": "Mail Arts",
+  "author": "Gideon George <georgegideon@gmail.com>",
   "scripts": {
     "dev": "nuxt",
+    "build": "babel src -d lib",
+    "test": "jest",
     "production": "nuxt build",
+    "generate": "nuxt generate",
     "now-build": "nuxt generate"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ivanlori/Vuemmerce.git"
+    "url": "https://github.com/gideon-george/arts-love-world.git"
   },
   "keywords": [
-    "css",
-    "js",
-    "html",
-    "template",
-    "ecommerce",
-    "vuejs",
-    "theme",
-    "responsive",
-    "nuxtjs"
+    "arts"
   ],
   "license": "MIT",
   "dependencies": {

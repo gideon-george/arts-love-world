@@ -6,7 +6,13 @@
           <h1 class="title is-3 is-flex-mobile"></h1>
         </nuxt-link>
 
-        <a role="button" class="navbar-burger burger" @click="isMenuOpen = !isMenuOpen" aria-label="menu" aria-expanded="false">
+        <a
+          role="button"
+          class="navbar-burger burger"
+          @click="isMenuOpen = !isMenuOpen"
+          aria-label="menu"
+          aria-expanded="false"
+        >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -19,21 +25,36 @@
             <VmSearch></VmSearch>
           </div>
         </div>
-        
+
         <div class="navbar-end">
-          <div class="navbar-item social">
-            <a href="#" class="icon" :title="facebookTooltip">
-              <i class="fa fa-facebook"></i>
-            </a>
-            <a href="#" class="icon" :title="twitterTooltip">
-              <i class="fa fa-twitter"></i>
-            </a>
-            <a href="#" class="icon" :title="instagramTooltip">
-              <i class="fa fa-instagram"></i>
-            </a>
-            <a href="#" class="icon" :title="linkedinTooltip">
-              <i class="fa fa-linkedin"></i>
-            </a>
+          <div class="navbar-item">
+            <nuxt-link :to="{ name: 'index' }" class="navbar-item">
+              <h1>
+                <span class="icon">
+                  <i class="fa fa-home"></i>
+                </span> Home
+              </h1>
+            </nuxt-link>
+          </div>
+
+          <div class="navbar-item">
+            <nuxt-link :to="{ name: 'policy' }" class="navbar-item">
+              <h1>
+                <span class="icon">
+                  <i class="fa fa-credit-card"></i>
+                </span> Sales policy
+              </h1>
+            </nuxt-link>
+          </div>
+
+          <div class="navbar-item">
+            <nuxt-link :to="{ name: 'contact' }" class="navbar-item">
+              <h1>
+                <span class="icon">
+                  <i class="fa fa-inbox"></i>
+                </span> Contact us
+              </h1>
+            </nuxt-link>
           </div>
           <div class="navbar-item shopping-cart" @click="showCheckoutModal">
             <span class="icon">
@@ -58,54 +79,55 @@
 </template>
 
 <script>
-  import VmMenu from '../menu/Menu';
-  import VmSearch from '../search/Search';
+import VmMenu from "../menu/Menu";
+import VmSearch from "../search/Search";
 
-  export default {
-    name: 'VmHeader',
+export default {
+  name: "VmHeader",
 
-    data () {
-      return {
-        linkedinTooltip: 'Follow us on Linkedin',
-        facebookTooltip: 'Follow us on Facebook',
-        twitterTooltip: 'Follow us on Twitter',
-        instagramTooltip: 'Follow us on Instagram',
-        isCheckoutActive: false,
-        isMenuOpen: false
-      }
-    },
+  data() {
+    return {
+      linkedinTooltip: "Follow us on Linkedin",
+      facebookTooltip: "Follow us on Facebook",
+      twitterTooltip: "Follow us on Twitter",
+      instagramTooltip: "Follow us on Instagram",
+      isCheckoutActive: false,
+      isMenuOpen: false
+    };
+  },
 
-    components: {
-      VmSearch,
-      VmMenu
-    },
+  components: {
+    VmSearch,
+    VmMenu
+  },
 
-    computed: {
-      numProductsAdded () {
-        return this.$store.getters.productsAdded.length;
-      }
-    },
-
-    methods: {
-      showCheckoutModal () {
-        this.$store.commit('showCheckoutModal', true);
-      }
+  computed: {
+    numProductsAdded() {
+      return this.$store.getters.productsAdded.length;
     }
-  };
+  },
+
+  methods: {
+    showCheckoutModal() {
+      this.$store.commit("showCheckoutModal", true);
+    }
+  }
+};
 </script>
 
 <style lang="scss" scoped>
-  .title {
-    background: url('../../static/vuemmerce-logo.png') no-repeat;
-    background-position: 50% 50%;
-    background-size: 165px;
-    width: 175px;
-    height: 35px;
-  }
-  .shopping-cart {
-    cursor: pointer;
-  }
-  a {
-    color: grey;
-  }
+.title {
+  background: url("/img/logo.jpg") no-repeat;
+  background-position: 50% 50%;
+  border-radius: 150px;
+  background-size: 165px;
+  width: 175px;
+  height: 35px;
+}
+.shopping-cart {
+  cursor: pointer;
+}
+a {
+  color: grey;
+}
 </style>
