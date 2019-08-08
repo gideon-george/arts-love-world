@@ -16,11 +16,7 @@
         </p>
         <br />
         <a href="#">
-<<<<<<< HEAD
           <p>MailArts ❤ From Arts Love World | &trade;</p>
-=======
-          <p>With ❤ From Arts Love World | &trade;</p>
->>>>>>> e24c0913ed5498d0513f3f28fbd8dae67792809d
         </a>
         <br />
         <a href="#">
