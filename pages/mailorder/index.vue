@@ -5,13 +5,13 @@
         <div class="card-content__title">
           <div class="column card-content__text">
             <div class="container col-md-6">
-              <h1 class="title">Mail Order</h1>
+              <h1 class="title">Mail Art</h1>
 
-              <p>Work in progress, check back later.</p>
+              <p>You may want to get your oil on canvas paintings framed on wood through the mail</p>
 
-              <p>This part of the site is currently being updated...</p>
+              <p>Our Mail Art package is coming soon for certain countries</p>
 
-              <h3 class="title">Coming soon...</h3>
+              <h3 class="title">Members will receive notification on the imminent commencement.</h3>
             </div>
           </div>
         </div>

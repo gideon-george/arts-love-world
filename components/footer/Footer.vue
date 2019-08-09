@@ -84,11 +84,21 @@
         </p>
         <br />
         <p>
-          <nuxt-link :to="{ name: 'mailorder' }">
+          <nuxt-link :to="{ name: 'privacy' }">
             <h3>
               <span class="icon">
-                <i class="fa fa-envelope"></i>
-              </span>Mail Order
+                <i class="fa fa-shield"></i>
+              </span> Privacy Policy
+            </h3>
+          </nuxt-link>
+        </p>
+        <br />
+        <p>
+          <nuxt-link :to="{ name: 'terms' }">
+            <h3>
+              <span class="icon">
+                <i class="fa fa-file-pdf-o"></i>
+              </span>Terms And Conditions
             </h3>
           </nuxt-link>
         </p>
@@ -100,16 +110,6 @@
               <span class="icon">
                 <i class="fa fa-inbox"></i>
               </span>Contact Us
-            </h3>
-          </nuxt-link>
-        </p>
-        <br />
-        <p>
-          <nuxt-link :to="{ name: 'terms' }">
-            <h3>
-              <span class="icon">
-                <i class="fa fa-file-pdf-o"></i>
-              </span>Terms And Conditions
             </h3>
           </nuxt-link>
         </p>

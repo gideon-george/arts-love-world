@@ -28,6 +28,27 @@
                 </p>
                 <p v-if="highlightNameWithError" class="help is-danger">{{ nameErrorLabel }}</p>
               </div>
+
+              <div class="field">
+                <p class="control has-icons-left has-icons-right">
+                  <input
+                    :class="[highlightPhoneWithError ? 'input is-danger' : 'input']"
+                    type="text"
+                    :placeholder="phonePlaceholder"
+                    v-model="Phone"
+                    @keyup="checkNameOnKeyUp(phone)"
+                  >
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-phone"></i>
+                  </span>
+                  <span v-if="highlightNameWithError !== null" class="icon is-small is-right">
+                    <i :class="[highlightNameWithError ? 'fa fa-exclamation-circle' : 'fa fa-check']"></i>
+                  </span>
+                </p>
+                <p v-if="highlightPhoneWithError" class="help is-danger">{{ phoneErrorLabel }}</p>
+              </div>
+
+
               <div class="field">
                 <p class="control has-icons-left has-icons-right">
                   <input
@@ -115,19 +136,23 @@ export default {
       primaryBtnLabel: 'Sign up',
       btnRegisteredLabel: 'Close',
       namePlaceholder: 'Name*',
+      phonePlaceholder: 'Mobile Phone Number*',
       emailPlaceholder: 'Email*',
       passwordPlaceholder: 'Password*',
       repeatPasswordPlaceholder: 'Repeat Password*',
       notEqualErrorLabel: 'Passwords must be equal',
       passwordErrorLabel: 'Password required',
       nameErrorLabel: 'Name required',
+      phoneErrorLabel: 'Phone number required',
       emailErrorLabel: 'Email required',
       emailNotValidLabel: 'Valid email required',
       name: '',
+      phone: '',
       email: '',
       password: '',
       repeatPassword: '',
       highlightNameWithError: null,
+      highlightPhoneWithError: null,
       highlightEmailWithError: null,
       highlightPasswordWithError: null,
       highlightRepeatPasswordWithError: null,
@@ -170,6 +195,13 @@ export default {
         this.highlightNameWithError = false;
       }
 
+      if (!this.phone) {
+        this.highlightPhoneWithError = true;
+      } else {
+        this.highlightPhoneWithError = false;
+      }
+
+
       if (!this.email) {
         this.highlightEmailWithError = true;
 
@@ -199,6 +231,17 @@ export default {
         this.highlightNameWithError = true;
       }
     },
+
+    checPhoneOnKeyUp (phoneValue) {
+      if (phoneValue) {
+        this.highlightPhoneWithError = false;
+      } else {
+        this.highlightPhoneWithError = true;
+      }
+    },
+
+
+
     checkEmailOnKeyUp (emailValue) {
       if (emailValue && isValidEmail(emailValue)) {
         this.highlightEmailWithError = false;
