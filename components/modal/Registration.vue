@@ -48,6 +48,26 @@
                 <p v-if="highlightPhoneWithError" class="help is-danger">{{ phoneErrorLabel }}</p>
               </div>
 
+              <div class="field">
+                <p class="control has-icons-left has-icons-right">
+                  <input
+                    :class="[highlightAddressWithError ? 'input is-danger' : 'input']"
+                    type="text"
+                    :placeholder="addressPlaceholder"
+                    v-model="address"
+                    @keyup="checkNameOnKeyUp(address)"
+                  >
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-home"></i>
+                  </span>
+                  <span v-if="highlightNameWithError !== null" class="icon is-small is-right">
+                    <i :class="[highlightNameWithError ? 'fa fa-exclamation-circle' : 'fa fa-check']"></i>
+                  </span>
+                </p>
+                <p v-if="highlightAddressWithError" class="help is-danger">{{ addressErrorLabel }}</p>
+              </div>
+
+
 
               <div class="field">
                 <p class="control has-icons-left has-icons-right">
@@ -104,6 +124,10 @@
                 </p>
                 <p v-if="highlightRepeatPasswordWithError" class="help is-danger">{{ notEqualErrorLabel }}</p>
               </div>
+
+              
+
+
             </div>
             <div v-if="isUserSignedUp" class="level">
               <div class="level-item has-text-centered">
@@ -136,24 +160,28 @@ export default {
       primaryBtnLabel: 'Sign up',
       btnRegisteredLabel: 'Close',
       namePlaceholder: 'Name*',
-      phonePlaceholder: 'Mobile Phone Number*',
+      phonePlaceholder: 'Phone Number*',
       emailPlaceholder: 'Email*',
+      addressPlaceholder: 'Address*',
       passwordPlaceholder: 'Password*',
       repeatPasswordPlaceholder: 'Repeat Password*',
       notEqualErrorLabel: 'Passwords must be equal',
       passwordErrorLabel: 'Password required',
       nameErrorLabel: 'Name required',
       phoneErrorLabel: 'Phone number required',
+      addressErrorLabel: 'Address required',
       emailErrorLabel: 'Email required',
       emailNotValidLabel: 'Valid email required',
       name: '',
       phone: '',
       email: '',
+      address: '',
       password: '',
       repeatPassword: '',
       highlightNameWithError: null,
       highlightPhoneWithError: null,
       highlightEmailWithError: null,
+      highlightAddressWithError: null,
       highlightPasswordWithError: null,
       highlightRepeatPasswordWithError: null,
       isFormSuccess: false
@@ -232,7 +260,7 @@ export default {
       }
     },
 
-    checPhoneOnKeyUp (phoneValue) {
+    checkPhoneOnKeyUp (phoneValue) {
       if (phoneValue) {
         this.highlightPhoneWithError = false;
       } else {
