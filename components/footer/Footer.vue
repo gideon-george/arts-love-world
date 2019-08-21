@@ -44,7 +44,7 @@
             <br />
             <span class="icon">
               <i class="fa fa-phone"></i>
-            </span> +2348038789872
+            </span> +2349017997388
             <br />
           </p>
         </div>
