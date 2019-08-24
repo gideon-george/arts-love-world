@@ -15,7 +15,7 @@
             >{{ removeLabel }}</button>
 
             <p>{{ product.title }} {{ product.quantity > 0 ? ` - Quantity: ${product.quantity}` : ''}}</p>
-            <p> &#36;{{ product.price }}</p>
+            <p>&#36;{{ product.price }}</p>
           </div>
           <div v-if="products.length === 0">
             <p>{{ cartEmptyLabel }}</p>
@@ -28,7 +28,7 @@
                 <div class="card-content__title">
                   <div class="column card-content__text">
                     <div class="container col-md-6">
-                      <a href="https://pay.gladepay.com/artsloveworld">
+                      <a href="https://paystack.com/pay/mailder">
                         <img src="/img/Paynow.gif" />
                       </a>
                     </div>
