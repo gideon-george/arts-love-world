@@ -26,11 +26,8 @@
 
       <div class="column has-text-center">
         <div>
-<<<<<<< HEAD
           <h6 class="title">MailArts 24/7 Support</h6>
-=======
           <h6 class="title">24/7 Support</h6>
->>>>>>> e24c0913ed5498d0513f3f28fbd8dae67792809d
           <nuxt-link :to="{ name: 'contact' }">
             <h3 class="subtitle">
               <span class="icon">

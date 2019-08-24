@@ -9,8 +9,8 @@ module.exports = {
   head: {
     title: pkg.description,
     script: [
-      {src: '//voguepay.com/js/voguepay.js'},
-      {src: 'https://api.gladepay.com/checkout.js'}
+      {src: 'https://unpkg.com/vue/dist/vue.js'},
+      {src: '../dist/paystack.min.js'}
       
       
     ],
@@ -46,7 +46,8 @@ module.exports = {
           'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons'
       },
       {rel: 'stylesheet', type: 'text/css', href: 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'},
-      {rel: 'stylesheet', type: 'text/css', href: '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'}
+      {rel: 'stylesheet', type: 'text/css', href: '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'},
+      {rel: 'stylesheet', type: 'text/css', href: 'https://use.fontawesome.com/releases/v5.4.1/css/all.css', integrity:'sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz', crossorigin:'anonymous'}
     ]
   },
   

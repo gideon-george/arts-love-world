@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <div v-for="product in products" :key="product.id">
       <VmProducts :product="product"></VmProducts>
     
