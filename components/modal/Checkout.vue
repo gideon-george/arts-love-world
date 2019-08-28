@@ -15,7 +15,7 @@
             >{{ removeLabel }}</button>
 
             <p>{{ product.title }} {{ product.quantity > 0 ? ` - Quantity: ${product.quantity}` : ''}}</p>
-            <p>&#36;{{ product.price }}</p>
+            <p>&#8358;{{ product.price }}</p>
           </div>
           <div v-if="products.length === 0">
             <p>{{ cartEmptyLabel }}</p>
@@ -110,7 +110,7 @@ export default {
       } else {
         productLabel = "product";
       }
-      return `Buy ${totalProducts} ${productLabel} at $${finalPrice}`;
+      return `Buy ${totalProducts} ${productLabel} at ₦${finalPrice}`;
     },
     isUserLoggedIn() {
       return this.$store.getters.isUserLoggedIn;

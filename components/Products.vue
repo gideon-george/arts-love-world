@@ -44,7 +44,7 @@
           <p>{{ product.reviews > 0 ? `${product.reviews} Reviews` : 'No reviews' }}</p>
         </div>
         <p class="is-pulled-right">
-          <span class="title is-4"><strong> &#36;{{ product.price }}</strong></span>
+          <span class="title is-4"><strong> &#8358;{{ product.price }}</strong></span>
         </p>
       </div>
       <div class="card-footer btn-actions">
