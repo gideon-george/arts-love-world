@@ -5,7 +5,7 @@ export const state = () => ({
       title: "Arts Gallery Tour Brochure",
       description:
         "Arts love world all encompass brochure",
-      price: 1,
+      price: 500,
       ratings: 3,
       reviews: 17,
       isAddedToCart: false,
@@ -19,7 +19,7 @@ export const state = () => ({
       title: "Precious Jar",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 770,
+      price: 320000,
       ratings: 5,
       reviews: 10,
       isAddedToCart: false,
@@ -33,7 +33,7 @@ export const state = () => ({
       title: "Andalucia",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 870,
+      price: 330000,
       ratings: 2,
       reviews: 3,
       isAddedToCart: false,
@@ -45,8 +45,9 @@ export const state = () => ({
     {
       id: 4,
       title: "Angela",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      price: 753,
+      description:
+        "Classic oil on canvas painting art, with decent appreciating value.",      
+        price: 340000,
       ratings: 1,
       reviews: 0,
       isAddedToCart: false,
@@ -58,8 +59,9 @@ export const state = () => ({
     {
       id: 5,
       title: "Backstage",
-      description: "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 789,
+      description:
+        "Classic oil on canvas painting art, with decent appreciating value.",
+      price: 325000,
       ratings: 4,
       reviews: 2,
       isAddedToCart: false,
@@ -73,7 +75,7 @@ export const state = () => ({
       title: "BK Nude",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 909,
+      price: 340000,
       ratings: 5,
       reviews: 1,
       isAddedToCart: false,
@@ -87,7 +89,7 @@ export const state = () => ({
       title: "Blue Sky Horse",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 875,
+      price: 350000,
       ratings: 5,
       reviews: 7,
       isAddedToCart: false,
@@ -101,7 +103,7 @@ export const state = () => ({
       title: "Broadway",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 788,
+      price: 345000,
       ratings: 3,
       reviews: 0,
       isAddedToCart: false,
@@ -115,7 +117,7 @@ export const state = () => ({
       title: "Buongirno",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 905,
+      price: 335000,
       ratings: 4,
       reviews: 2,
       isAddedToCart: false,
@@ -128,8 +130,9 @@ export const state = () => ({
     {
       id: 10,
       title: "Focus",
-      description: "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 880,
+      description:
+        "Classic oil on canvas painting art, with decent appreciating value.",
+      price: 355000,
       ratings: 3,
       reviews: 5,
       isAddedToCart: false,
@@ -144,7 +147,7 @@ export const state = () => ({
       title: "Mid Summer Night",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 800,
+      price: 325000,
       ratings: 3,
       reviews: 5,
       isAddedToCart: false,
@@ -158,7 +161,7 @@ export const state = () => ({
       title: "Disunited",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 799,
+      price: 325000,
       ratings: 5,
       reviews: 10,
       isAddedToCart: false,
@@ -172,7 +175,7 @@ export const state = () => ({
       title: "Feelings",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 750,
+      price: 320000,
       ratings: 2,
       reviews: 3,
       isAddedToCart: false,
@@ -181,12 +184,26 @@ export const state = () => ({
       quantity: 1,
       img: "/img/13.jpg"
     },
-    
+    {
+      id: 14,
+      title: "Happiness is A Warm Gun",
+      description:
+        "Classic oil on canvas painting art, with decent appreciating value.",
+      price: 340000,
+      ratings: 1,
+      reviews: 0,
+      isAddedToCart: false,
+      isAddedBtn: false,
+      isFavourite: false,
+      quantity: 1,
+      img: "/img/14.jpg"
+    },
     {
       id: 15,
       title: "King Of The Hill",
-      description: "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 857,
+      description:
+        "Classic oil on canvas painting art, with decent appreciating value.",
+      price: 330000,
       ratings: 4,
       reviews: 2,
       isAddedToCart: false,
@@ -200,7 +217,7 @@ export const state = () => ({
       title: "Fragmented Dis-location",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 777,
+      price: 330000,
       ratings: 5,
       reviews: 1,
       isAddedToCart: false,
@@ -214,7 +231,7 @@ export const state = () => ({
       title: "La Seance",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 877,
+      price: 350000,
       ratings: 5,
       reviews: 7,
       isAddedToCart: false,
@@ -228,7 +245,7 @@ export const state = () => ({
       title: "Lupus In Fabula",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 907,
+      price: 340000,
       ratings: 3,
       reviews: 0,
       isAddedToCart: false,
@@ -242,7 +259,7 @@ export const state = () => ({
       title: "Magic II",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 900,
+      price: 345000,
       ratings: 4,
       reviews: 2,
       isAddedToCart: false,
@@ -257,7 +274,7 @@ export const state = () => ({
       title: "Mid Summer Nights",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 809,
+      price: 325000,
       ratings: 3,
       reviews: 5,
       isAddedToCart: false,
@@ -272,7 +289,7 @@ export const state = () => ({
       title: "Xian Myths of the Beauties, Diao and Chan",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 850,
+      price: 355000,
       ratings: 3,
       reviews: 5,
       isAddedToCart: false,
@@ -286,7 +303,7 @@ export const state = () => ({
       title: "Opelia IV",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 750,
+      price: 330000,
       ratings: 5,
       reviews: 10,
       isAddedToCart: false,
@@ -300,7 +317,7 @@ export const state = () => ({
       title: "Sexy On The Table",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 780,
+      price: 345000,
       ratings: 2,
       reviews: 3,
       isAddedToCart: false,
@@ -314,7 +331,7 @@ export const state = () => ({
       title: "Butterfly Dream",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 900,
+      price: 356000,
       ratings: 1,
       reviews: 0,
       isAddedToCart: false,
@@ -328,7 +345,7 @@ export const state = () => ({
       title: "Origene",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 804,
+      price: 347000,
       ratings: 4,
       reviews: 2,
       isAddedToCart: false,
@@ -342,7 +359,7 @@ export const state = () => ({
       title: "Pink Sands",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 780,
+      price: 355000,
       ratings: 5,
       reviews: 1,
       isAddedToCart: false,
@@ -356,7 +373,7 @@ export const state = () => ({
       title: "Princess Tinat",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 735,
+      price: 333000,
       ratings: 5,
       reviews: 7,
       isAddedToCart: false,
@@ -370,7 +387,7 @@ export const state = () => ({
       title: "Rabbit In The Box",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 850,
+      price: 345000,
       ratings: 3,
       reviews: 0,
       isAddedToCart: false,
@@ -384,7 +401,7 @@ export const state = () => ({
       title: "Reflection",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 905,
+      price: 358000,
       ratings: 4,
       reviews: 2,
       isAddedToCart: false,
@@ -399,7 +416,7 @@ export const state = () => ({
       title: "Romantic Venice",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 900,
+      price: 358000,
       ratings: 3,
       reviews: 5,
       isAddedToCart: false,
@@ -414,7 +431,7 @@ export const state = () => ({
       title: "Rustle",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 770,
+      price: 355000,
       ratings: 3,
       reviews: 5,
       isAddedToCart: false,
@@ -428,7 +445,7 @@ export const state = () => ({
       title: "Sand Dwellers",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 907,
+      price: 335000,
       ratings: 5,
       reviews: 10,
       isAddedToCart: false,
@@ -442,7 +459,7 @@ export const state = () => ({
       title: "Shadow People",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 800,
+      price: 356000,
       ratings: 2,
       reviews: 3,
       isAddedToCart: false,
@@ -456,7 +473,7 @@ export const state = () => ({
       title: "Silence",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 909,
+      price: 353000,
       ratings: 1,
       reviews: 0,
       isAddedToCart: false,
@@ -470,7 +487,7 @@ export const state = () => ({
       title: "Singing In The Shine",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 725,
+      price: 329000,
       ratings: 4,
       reviews: 2,
       isAddedToCart: false,
@@ -484,7 +501,7 @@ export const state = () => ({
       title: "Skin Covered in The Ego",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 805,
+      price: 354000,
       ratings: 5,
       reviews: 1,
       isAddedToCart: false,
@@ -498,7 +515,7 @@ export const state = () => ({
       title: "Still One",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 910,
+      price: 328000,
       ratings: 5,
       reviews: 7,
       isAddedToCart: false,
@@ -512,7 +529,7 @@ export const state = () => ({
       title: "The Barricade",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 895,
+      price: 342000,
       ratings: 3,
       reviews: 0,
       isAddedToCart: false,
@@ -526,7 +543,7 @@ export const state = () => ({
       title: "The Shack",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 799,
+      price: 335000,
       ratings: 4,
       reviews: 2,
       isAddedToCart: false,
@@ -541,7 +558,7 @@ export const state = () => ({
       title: "These Days",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 825,
+      price: 333000,
       ratings: 3,
       reviews: 5,
       isAddedToCart: false,
@@ -556,7 +573,7 @@ export const state = () => ({
       title: "Feelings Gone",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 860,
+      price: 329000,
       ratings: 3,
       reviews: 5,
       isAddedToCart: false,
@@ -570,7 +587,7 @@ export const state = () => ({
       title: "Sister Backed Sister",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 879,
+      price: 344000,
       ratings: 5,
       reviews: 10,
       isAddedToCart: false,
@@ -584,7 +601,7 @@ export const state = () => ({
       title: "Sweet Damsel",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 770,
+      price: 340000,
       ratings: 2,
       reviews: 3,
       isAddedToCart: false,
@@ -598,7 +615,7 @@ export const state = () => ({
       title: "Glamorous",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 870,
+      price: 338000,
       ratings: 1,
       reviews: 0,
       isAddedToCart: false,
@@ -612,7 +629,7 @@ export const state = () => ({
       title: "One Love",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 770,
+      price: 323000,
       ratings: 4,
       reviews: 2,
       isAddedToCart: false,
@@ -626,7 +643,7 @@ export const state = () => ({
       title: "Velocidad II",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 877,
+      price: 350000,
       ratings: 5,
       reviews: 1,
       isAddedToCart: false,
@@ -640,7 +657,7 @@ export const state = () => ({
       title: "Yearling Cascade",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 780,
+      price: 348000,
       ratings: 5,
       reviews: 7,
       isAddedToCart: false,
@@ -654,7 +671,7 @@ export const state = () => ({
       title: "White Witch Awakening",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 870,
+      price: 347000,
       ratings: 3,
       reviews: 0,
       isAddedToCart: false,
@@ -668,7 +685,7 @@ export const state = () => ({
       title: "Working Out",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 800,
+      price: 330000,
       ratings: 4,
       reviews: 2,
       isAddedToCart: false,
@@ -683,7 +700,7 @@ export const state = () => ({
       title: "Sweet Soul",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 777,
+      price: 328000,
       ratings: 3,
       reviews: 5,
       isAddedToCart: false,
@@ -698,7 +715,7 @@ export const state = () => ({
       title: "Yellow MiLady",
       description:
         "Classic oil on canvas painting art, with decent appreciating value.",
-      price: 899,
+      price: 354000,
       ratings: 3,
       reviews: 5,
       isAddedToCart: false,
